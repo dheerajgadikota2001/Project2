@@ -1,0 +1,308 @@
+{
+  "project_info": {
+    "name": "ADA Corrector",
+    "parent_brand": "EnhanceGov",
+    "tagline": "Automated PDF Remediation & Compliance Infrastructure",
+    "hero_headline": "Every PDF deserves to be read by everyone.",
+    "honest_pitch": "We do not tell you a document is fixed unless it actually is.",
+    "target_audience": [
+      "Government Agencies (Local, State, Federal)",
+      "Public Institutions & Higher Education Universities",
+      "Corporate Compliance Officers & Accessibility Directors",
+      "Chief Information Officers (CIOs) and IT Leads under audit"
+    ],
+    "app_type": "landing_page",
+    "visual_direction": "Trustworthy institutional authority — Deep navy + crisp high-contrast white + precision tech accents, serious & uncompromising"
+  },
+  "accessibility_mandate_wcag_2_1_aa": {
+    "hard_requirements": [
+      "CONTRAST: Zero light grey subtext. All text must strictly pass WCAG 2.1 AA (minimum 4.5:1 for normal text, 3:1 for large text). On dark backgrounds, secondary text must be #E2E8F0 (slate-200) or #F1F5F9 (slate-100). On light surfaces, text must be #0F172A (slate-900).",
+      "FONT FAMILY: Pure sans-serif typography strictly enforced across the entire site ('Plus Jakarta Sans', 'Public Sans', or 'Outfit' with 'Inter' fallback). Serif fonts banned to maintain crisp rendering for low-vision readers.",
+      "MINIMUM TEXT SIZES: Smallest body/caption text must be >= 16px (1rem / 12pt). Heading & subhead text strictly >= 18px (1.125rem). Small labels are forbidden from dropping below 14px bold.",
+      "LINE HEIGHT & SPACING: Minimum 1.5x font size for all body paragraphs (leading-relaxed / leading-6). Paragraph bottom margin must be at least 2x font size (mb-6 / space-y-6).",
+      "REFLOW & ZOOM: Layout must sustain 200% browser zoom without horizontal scrolling, text clipping, overlap, or broken component containers.",
+      "FOCUS & KEYBOARD: Focus rings must be visible 3px outline in high-contrast electric blue (#3A86FF) with 2px offset. Interactive targets minimum 44x44px target area.",
+      "DECORATIVE ANIMATION: Respects 'prefers-reduced-motion'. Decorative canvases and motion elements fall back gracefully to static high-contrast visual states."
+    ]
+  },
+  "color_palette": {
+    "theme": "Deep Institutional Navy & High-Contrast White",
+    "primary_backgrounds": {
+      "deep_navy_dark": "#0B132B",
+      "navy_surface": "#1C2541",
+      "navy_card": "#1E293B",
+      "navy_border": "#334155",
+      "pure_white_surface": "#FFFFFF",
+      "subtle_light_bg": "#F8FAFC"
+    },
+    "brand_accents": {
+      "electric_indigo": "#3A86FF",
+      "indigo_glow": "rgba(58, 134, 255, 0.25)",
+      "mint_emerald": "#06D6A0",
+      "mint_glow": "rgba(6, 214, 160, 0.2)",
+      "warning_amber": "#FFB703",
+      "error_crimson": "#EF4444"
+    },
+    "text_colors": {
+      "dark_theme": {
+        "primary": "#FFFFFF",
+        "secondary": "#E2E8F0",
+        "muted_high_contrast": "#94A3B8"
+      },
+      "light_theme": {
+        "primary": "#0F172A",
+        "secondary": "#1E293B",
+        "muted_high_contrast": "#334155"
+      }
+    },
+    "forbidden_colors": [
+      "#7351B7",
+      "#1B93A4",
+      "light-grey subtext (#A0A0A0, #666666 on dark backgrounds)",
+      "low-contrast pastel yellow text"
+    ]
+  },
+  "typography": {
+    "font_family_heading": "'Plus Jakarta Sans', 'Public Sans', sans-serif",
+    "font_family_body": "'Public Sans', 'Inter', sans-serif",
+    "size_hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-snug",
+      "h3_subsection": "text-xl sm:text-2xl font-bold leading-snug",
+      "h4_card_header": "text-lg sm:text-xl font-semibold leading-normal",
+      "body_large": "text-lg sm:text-xl font-normal leading-relaxed text-slate-200",
+      "body_regular": "text-base font-normal leading-relaxed text-slate-200",
+      "caption_badge": "text-xs font-bold uppercase tracking-wider text-slate-100"
+    }
+  },
+  "page_structure": {
+    "sections_order": [
+      "1_header_nav",
+      "2_hero_section",
+      "3_problem_manifesto",
+      "4_how_it_works_4steps",
+      "5_features_grid_9items",
+      "6_why_us_honest_reporting",
+      "7_pricing_2cards",
+      "8_faq_accordion",
+      "9_final_cta_band",
+      "10_footer"
+    ],
+    "section_specifications": {
+      "1_header_nav": {
+        "component": "InstitutionalHeader",
+        "sticky": true,
+        "style": "backdrop-blur-xl bg-[#0B132B]/90 border-b border-slate-800 z-50",
+        "elements": [
+          "EnhanceGov ADA Corrector Official Crest Logo",
+          "Nav Links: Problem, How It Works, Features, Honest Guarantee, Pricing, FAQ",
+          "Compliance Badge ('WCAG 2.1 AA & Sec 508 Verified')",
+          "CTA Button: 'Scan PDF Now' (Electric Indigo)"
+        ]
+      },
+      "2_hero_section": {
+        "headline": "Every PDF deserves to be read by everyone.",
+        "subheadline": "Automated PDF remediation built for audited public institutions. Scans, structures, tags, generates AI image alt-text, fixes reading order, and returns verified WCAG 2.1 AA files.",
+        "interactive_element": "Live Interactive PDF Remediation Simulator Widget (Upload Mock Dropzone + Side-by-Side Before/After Accessibility Visualizer showing screen reader structural tree, contrast ratio fixes, and alt-text generator)",
+        "trust_strip": "Architected for State & Federal Agencies, Higher Ed Universities, County Health, Public Utilities",
+        "ctas": [
+          "Primary: 'Start Free Compliance Audit'",
+          "Secondary: 'See Live Scan Demo'"
+        ]
+      },
+      "3_problem_manifesto": {
+        "title": "The PDF Accessibility Crisis",
+        "subtitle": "Most automated tools lie to you with surface overlays. Lawsuits don't target bad code — they target unreadable documents.",
+        "layout": "Numbered 3-Chapter Manifesto Grid with high-contrast split editorial cards",
+        "chapters": [
+          {
+            "number": "01",
+            "title": "Invisible Documents",
+            "desc": "Screen readers treat scanned PDFs like blank image walls. Blind citizens, veterans, and students are locked out of basic public services."
+          },
+          {
+            "number": "02",
+            "title": "The Overlay Scam",
+            "desc": "JavaScript widgets installed on websites do NOT fix downloadable PDFs. When DOJ audits hit, document overlays offer zero legal immunity."
+          },
+          {
+            "number": "03",
+            "title": "Remediation Bottlenecks",
+            "desc": "Manual tagging costs $15–$45 per page and takes weeks. Public agencies face backlogs of 50,000+ un-remediated PDFs."
+          }
+        ]
+      },
+      "4_how_it_works_4steps": {
+        "title": "4 Steps to Total Document Compliance",
+        "steps": [
+          {
+            "step": "01",
+            "name": "Ingestion & Deep Audit",
+            "desc": "Upload single files or batch drop folders. ADA Corrector inspects tags, DOM order, form fields, color contrast, and media elements against WCAG 2.1 AA and Section 508."
+          },
+          {
+            "step": "02",
+            "name": "Autonomous Structural Remediation",
+            "desc": "AI engine builds logical H1-H6 outline trees, fixes table headers, repairs broken reading order, and creates semantic form labels."
+          },
+          {
+            "step": "03",
+            "name": "Context-Aware Alt-Text Generation",
+            "desc": "Multimodal visual models analyze charts, maps, signatures, and complex diagrams to write precise, high-utility image descriptions."
+          },
+          {
+            "step": "04",
+            "name": "Certified Output & Honest Reporting",
+            "desc": "Download your fully remediated PDF/UA file alongside a plain-English Audit Report and a signed legal Certificate of Compliance."
+          }
+        ]
+      },
+      "5_features_grid_9items": {
+        "title": "Engineered for Complete Accessibility Coverage",
+        "grid_layout": "Bento Grid (3x3 on desktop, 1x1 on mobile)",
+        "features": [
+          "Semantic Structure Tagging (H1-H6, Lists, Blockquotes)",
+          "AI Multimodal Alt-Text for Complex Charts & Diagrams",
+          "Reading Order & Touch Target Optimization",
+          "PDF Form Field Labeling & Interactive State Mapping",
+          "Color Contrast Auto-Adjustment & Luminance Verification",
+          "Table Header-to-Cell Relationship Fixing",
+          "Document Metadata & Language Encoding (dc:title, Lang)",
+          "Automatic Bookmark & Table of Contents Generation",
+          "Plain-English Compliance Audit & Certificate PDF"
+        ]
+      },
+      "6_why_us_honest_reporting": {
+        "badge": "Our Core Guarantee",
+        "headline": "We do not tell you a document is fixed unless it actually is.",
+        "description": "If ADA Corrector detects a complex visual or math matrix that requires human verification, we explicitly flag it with exact page coordinates. No fake 100% scores. No legal vulnerability.",
+        "comparison_table": {
+          "headers": ["Feature / Guarantee", "Generic PDF Tools", "ADA Corrector"],
+          "rows": [
+            ["Truthful Pass/Fail Reporting", "False positive green checks", "Strict WCAG 2.1 AA verification"],
+            ["Legal Compliance Certificate", "None or disclaimed", "Downloadable signed Certificate"],
+            ["Complex Chart AI Alt-Text", "Generic 'Image' tag", "Deep contextual summary"],
+            ["Form Control Accessibility", "Skipped", "Full field & tooltip binding"],
+            ["Auditor-Ready Audit Trail", "No report", "Exportable PDF/UA + JSON log"]
+          ]
+        }
+      },
+      "7_pricing_2cards": {
+        "headline": "Transparent Pricing for Public & Institutional Budgeting",
+        "subheadline": "No hidden per-user seat fees. Pay per scan or subscribe for unlimited institutional remediation.",
+        "cards": [
+          {
+            "name": "Single Scan",
+            "price": "$19.99",
+            "period": "per document",
+            "badge": "Pay-As-You-Go",
+            "features": [
+              "Up to 100 pages per document",
+              "Full WCAG 2.1 AA & Section 508 remediation",
+              "AI Alt-text generation included",
+              "Plain-English audit report",
+              "Downloadable compliance certificate",
+              "1-Year compliance asset hosting"
+            ],
+            "cta": "Remediate Single PDF",
+            "popular": false
+          },
+          {
+            "name": "Monthly Plan",
+            "price": "$99",
+            "period": "/ month",
+            "badge": "MOST POPULAR",
+            "features": [
+              "Unlimited document scans (up to 2,500 pgs/mo)",
+              "Automated batch directory processing",
+              "API access for CMS & intranet sync",
+              "Priority 2-minute remediation queue",
+              "Custom agency compliance certificates",
+              "Dedicated accessibility specialist support"
+            ],
+            "cta": "Start Monthly Membership",
+            "popular": true
+          }
+        ]
+      },
+      "8_faq_accordion": {
+        "headline": "Frequently Asked Questions",
+        "items": [
+          {
+            "q": "What exact standards does ADA Corrector check against?",
+            "a": "ADA Corrector evaluates and fixes documents against WCAG 2.1 Level AA, Section 508 of the Rehabilitation Act, and PDF/UA (ISO 14289-1) international standards."
+          },
+          {
+            "q": "How does your 'honest reporting' guarantee work?",
+            "a": "Unlike legacy software that rubber-stamps documents, ADA Corrector runs a secondary verification engine. If a complex architectural blueprint or handwritten signature cannot be 100% programmatically validated, it alerts you with exact page coordinates rather than giving a false pass."
+          },
+          {
+            "q": "Can ADA Corrector handle scanned image-only PDFs?",
+            "a": "Yes. Built-in OCR extracts text layers before analyzing logical DOM reading order, heading levels, and semantic tags."
+          },
+          {
+            "q": "Do you offer enterprise procurement / VPAT documentation?",
+            "a": "Yes. EnhanceGov provides complete VPAT 2.4 documentation, SOC 2 Type II reports, and custom invoicing for government purchase orders."
+          },
+          {
+            "q": "Is my confidential agency data secure?",
+            "a": "All files are processed in zero-knowledge encrypted memory enclaves and automatically deleted 24 hours after remediation unless saved to your vault."
+          }
+        ]
+      },
+      "9_final_cta_band": {
+        "headline": "Make your public records accessible in under 60 seconds.",
+        "subheadline": "Join over 420 government entities, universities, and health systems staying compliant.",
+        "cta_button": "Remediate Your First PDF Now",
+        "guarantee_note": "No credit card required for initial accessibility audit scan."
+      },
+      "10_footer": {
+        "brand": "EnhanceGov — ADA Corrector",
+        "copyright": "© 2026 EnhanceGov Inc. All rights reserved.",
+        "links": [
+          "Privacy Policy",
+          "Terms of Service",
+          "Cookie Preferences",
+          "Accessibility Statement",
+          "VPAT 2.4 Report",
+          "Contact Security Team"
+        ]
+      }
+    }
+  },
+  "interactive_components_and_motion": {
+    "smooth_scroll": "Lenis smooth scroll enabled globally",
+    "hero_animation": "Kinetic line-by-line staggered reveal on hero headline & interactive live simulator",
+    "bento_grid_reveal": "Framer motion scale-up & fade-in when scrolling into viewport",
+    "interactive_widget": "Interactive Remediation Simulator in Hero: lets user toggle 'Raw Accessibility Tree', 'Alt-Text Generator', and 'Compliance Score' preview",
+    "pricing_toggle": "Accessible tab interface with high-contrast active indicator",
+    "faq_accordion": "Accessible keyboard-navigable disclosure panels with rotation arrows"
+  },
+  "image_urls": [
+    {
+      "category": "hero_institutional_bg",
+      "url": "https://images.unsplash.com/photo-1525286335722-c30c6b5df541?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Architectural high-contrast government building facade"
+    },
+    {
+      "category": "tech_document_scanning",
+      "url": "https://images.pexels.com/photos/8728168/pexels-photo-8728168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "High tech digital document interface"
+    },
+    {
+      "category": "university_institutional_trust",
+      "url": "https://images.unsplash.com/photo-1770146605131-745015489f8b?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Modern institutional university campus architecture"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Strictly follow all WCAG 2.1 AA accessibility guidelines specified in accessibility_mandate_wcag_2_1_aa.",
+    "Ensure ALL text on dark navy backgrounds uses white (#FFFFFF) or high contrast light slate (#E2E8F0) — zero dark gray or low-contrast light grey subtext allowed.",
+    "Use sans-serif font family ('Plus Jakarta Sans', 'Public Sans', 'Inter') throughout the site.",
+    "Add 'data-testid' attributes to all buttons, links, accordion headers, form inputs, and interactive tabs (e.g., data-testid='hero-scan-cta-button').",
+    "Do NOT add a Testimonials section (user explicitly requested to leave out testimonials entirely).",
+    "Implement the 9 specified page sections in exact sequence.",
+    "Ensure line-height is at least 1.5 (leading-relaxed) and paragraph bottom margins are at least 2 font sizes (mb-6).",
+    "Verify layout usability at 200% zoom with zero text collisions or unexpected overflow."
+  ]
+}
