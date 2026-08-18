@@ -41,6 +41,12 @@ export const ScanSimulator = () => {
       data-testid="hero-scan-simulator"
       className="relative w-full rounded-2xl border border-slate-700/80 bg-[#111a35]/90 p-5 shadow-[0_40px_120px_-30px_rgba(0,0,0,0.8)] backdrop-blur-xl sm:p-6"
     >
+      <p
+        data-testid="example-report-label"
+        className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-[#7fb0ff]"
+      >
+        Example report
+      </p>
       {/* window chrome */}
       <div className="mb-5 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
@@ -123,8 +129,9 @@ export const ScanSimulator = () => {
       </div>
 
       <p className="mt-4 text-sm font-medium leading-relaxed text-slate-200">
-        We never mark the flagged item as done. You see exactly what changed,
-        and exactly what still needs a human eye.
+        Every document is different, some need nothing flagged, others need a
+        human eye on one detail. Either way, you'll always know exactly what
+        changed and what didn't.
       </p>
     </div>
   );
