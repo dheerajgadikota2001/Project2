@@ -39,7 +39,7 @@ export const Header = () => {
           aria-label="ADA Corrector home"
           className="shrink-0"
         >
-          <Logo />
+          <Logo subtitle />
         </a>
 
         <nav

@@ -1,5 +1,5 @@
 /* Text-based brand mark. Client will replace the glyph with their uploaded logo. */
-export const Logo = ({ className = "", showText = true }) => {
+export const Logo = ({ className = "", showText = true, subtitle = false }) => {
   return (
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <span
@@ -29,8 +29,15 @@ export const Logo = ({ className = "", showText = true }) => {
         </svg>
       </span>
       {showText && (
-        <span className="font-heading text-lg font-extrabold leading-none tracking-tight text-white">
-          ADA Corrector
+        <span className="flex flex-col leading-none">
+          <span className="font-heading text-lg font-extrabold tracking-tight text-white">
+            ADA Corrector
+          </span>
+          {subtitle && (
+            <span className="mt-1 text-sm font-semibold tracking-wide text-slate-300">
+              by EnhanceGov LLC
+            </span>
+          )}
         </span>
       )}
     </span>
