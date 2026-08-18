@@ -28,7 +28,7 @@ export const FinalCTA = () => {
                 data-testid="final-cta-button"
                 className="group inline-flex items-center gap-2 rounded-full bg-[#3A86FF] px-8 py-4 text-lg font-semibold text-white shadow-[0_16px_40px_-12px_rgba(58,134,255,0.9)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#2f78f0]"
               >
-                Scan your first PDF free
+                See it fix a real PDF
                 <ArrowRight
                   size={20}
                   className="transition-transform duration-200 group-hover:translate-x-1"
