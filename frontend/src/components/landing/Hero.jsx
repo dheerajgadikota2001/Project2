@@ -1,6 +1,6 @@
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck, Check } from "lucide-react";
 import { MaskedLines } from "../motion/Reveal";
 import { ScanSimulator } from "./ScanSimulator";
 
@@ -45,9 +45,18 @@ export const Hero = () => {
             Built to meet WCAG 2.1 AA & Section 508
           </motion.div>
 
+          <motion.p
+            initial={reduce ? false : { opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mb-4 text-lg font-semibold leading-relaxed text-[#7fb0ff]"
+          >
+            Still stuck with PDFs that "pass" but aren't actually accessible?
+          </motion.p>
+
           <h1 className="font-heading text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
             <MaskedLines
-              lines={["Every PDF deserves", "to be read", "by everyone."]}
+              lines={["Meet the ADA tool", "that finishes", "what others start."]}
             />
           </h1>
 
@@ -57,10 +66,35 @@ export const Hero = () => {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="mt-7 max-w-xl text-lg font-normal leading-relaxed text-slate-100 sm:text-xl"
           >
-            Upload any PDF. ADA Corrector finds every WCAG 2.1 AA and Section 508
-            issue, fixes what it can fix automatically, and shows you exactly
-            what changed. Minutes, not weeks.
+            We don't just run a check and call it done. Every fix is verified,
+            not assumed. Every gap that's left is flagged, not hidden. You'll
+            always know exactly where your document stands, not just today, but
+            if anyone ever audits it.
           </motion.p>
+
+          <motion.ul
+            initial={reduce ? false : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.7 }}
+            className="mt-7 max-w-xl space-y-3"
+          >
+            {[
+              "We fix what we can fix, instantly.",
+              "We flag what still needs a human eye, honestly.",
+              "You never get a false \u201Call clear.\u201D",
+            ].map((line) => (
+              <li key={line} className="flex items-start gap-3">
+                <Check
+                  size={20}
+                  className="mt-0.5 shrink-0 text-[#5EEAD4]"
+                  aria-hidden="true"
+                />
+                <span className="text-base font-medium leading-relaxed text-white sm:text-lg">
+                  {line}
+                </span>
+              </li>
+            ))}
+          </motion.ul>
 
           <motion.div
             initial={reduce ? false : { opacity: 0, y: 16 }}
@@ -73,7 +107,7 @@ export const Hero = () => {
               data-testid="hero-primary-cta"
               className="group inline-flex items-center gap-2 rounded-full bg-[#3A86FF] px-7 py-4 text-lg font-semibold text-white shadow-[0_16px_40px_-12px_rgba(58,134,255,0.9)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#2f78f0]"
             >
-              Scan your first PDF free
+              See it fix a real PDF
               <ArrowRight
                 size={20}
                 className="transition-transform duration-200 group-hover:translate-x-1"
